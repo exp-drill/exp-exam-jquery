@@ -1,0 +1,23 @@
+<div class="header">
+
+</div>
+
+<div class="contents">
+  <%= render @articles %>
+</div>
+
+<div class="form-area">
+  <div class="form">
+    <%= form_for(@article) do |f| %>
+    <%= f.text_field :text, class: "article_form" %>
+    <div class="char_num">
+      0文字
+    </div>
+    <%= f.submit "POST" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="scroll_arrow">
+  <i class="fa fa-arrow-down" aria-hidden="true"></i>
+</div>
